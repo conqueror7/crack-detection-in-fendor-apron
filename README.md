@@ -1,4 +1,4 @@
-# crack-detection-in-fendor-apron
+# crack-detection-in-fender-apron
 
 Classifying images of fendor apron into healthy and defected class using object detection algorithm- Faster R-CNN.
 
