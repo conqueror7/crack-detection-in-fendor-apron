@@ -42,22 +42,22 @@ Created bounding box around the cracked/defected portion of object. Check follow
 #### Steps to run the code
 **Resnet50 model**
 * For training Resnet50 model, use the command below <br />
-python train_resnet50.py train_dir_path validation_dir_path  model_save_path batch_size epoch
+`python train_resnet50.py train_dir_path validation_dir_path  model_save_path batch_size num_epochs`
 
 * To predict using Resnet50 model, use the command below <br />
-python test_resnet50.py validation_dir_path test_dir_path model_name 224 224
+`python test_resnet50.py validation_dir_path test_dir_path model_name 224 224`
 
 **Faster R-CNN model**
 * For training Faster R-CNN model, use the command below <br />
-python train_frcnn.py -p annotate_aug_scaled.txt -o simple --network vgg --num_epochs 100
+`python train_frcnn.py -p annotate_aug_scaled.txt -o simple --network vgg --num_epochs 100`
 
 * To predict using Faster R-CNN model, use the command below <br />
-python test_frcnn.py -p test_folder_path <br />
+`python test_frcnn.py -p test_folder_path` <br />
 
 **Utils Folder**
 * Augmentation can be done using ImageDataGenerator class in keras. Run below command <br />
-python image_augmentation.py original_folder destination_folder no_of_images_to_be_generated
+`python image_augmentation.py original_folder destination_folder num_images_to_be_generated`
 * img_rescale_util.ipynb can be used to resize the image size if too big and can help in saving training time.
 * annotations_json_to_csv_util.ipynb can be used to parse the json file obtained after annotating the images in Labelbox for detection. Output file will be .txt file in below format <br />
-img_path,x_min,x_max,y_min,y_max,class <br />
+`img_path,x_min,x_max,y_min,y_max,class` <br />
 This annotate_aug_scaled.txt file will be passed as input for Faster R-CNN model training.
