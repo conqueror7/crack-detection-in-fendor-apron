@@ -1,6 +1,6 @@
 # crack-detection-in-fender-apron
 
-Classifying images of fendor apron into healthy and defected class using object detection algorithm- Faster R-CNN.
+Classifying images of fender apron into healthy and defected class using object detection algorithm- Faster R-CNN.
 
 #### Setup info :
 * Keras : 2.2.4
